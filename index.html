@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te amo</title>
+    
+    <style>
+    body{
+        background-color: rgb(255, 0, 0);
+    }
+    .painel{
+        margin: auto;
+        width: 500px;
+        height: 500px;
+        text-align: center;
+        padding-top: 200px;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    @keyframes piscar {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0;
+            }
+        }
+    .painel h1{
+        color: white;
+        animation: piscar 2s infinite;
+        font-size: 4em;
+    }
+
+
+    #sim{
+        height: 40px;
+        width: 60px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        margin-left: -80px;
+    }
+
+    #nao{
+        position: absolute; 
+        height: 40px;
+        width: 60px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+        margin-left: 20px;
+    }
+</style>
+</head>
+
+<body>
+    
+    <div class="painel">
+        <h1>Cuzinho hoje?</h1>
+
+        <a href="https://www.youtube.com/shorts/zSRN0-IPdsI"><button id="sim"> Sim! </button></a>
+        <button onmouseover="fuja()" id="nao"> Não </button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
